@@ -1,7 +1,9 @@
 package com.example.java_stage;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Myplugin plugin = new Myplugin();
-        plugin.performAction();
+        Myplugin myPlugin = new Myplugin(this);
+        myPlugin.whistleLoopEvents("eventName", "extraParameters");
     }
 }
