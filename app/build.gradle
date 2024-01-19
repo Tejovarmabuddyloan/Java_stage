@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.java_stage'
+    namespace 'com.example.java_stages'
     compileSdk 34
 
     defaultConfig {
