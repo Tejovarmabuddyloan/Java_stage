@@ -9,6 +9,7 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_7
     targetCompatibility = JavaVersion.VERSION_1_7
 }
+afterEvaluate {
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -17,7 +18,8 @@ publishing {
             version '0.0.1'
 
             from components.java
-            artifact jar
+
         }
     }
+}
 }
