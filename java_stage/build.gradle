@@ -12,7 +12,12 @@ java {
 publishing {
     publications {
         mavenJava(MavenPublication) {
+            groupId = 'com.github.Tejovarmabuddyloan'
+            artifactId 'java_stage'
+            version '0.0.1'
+
             from components.java
+            artifact jar
         }
     }
 }
